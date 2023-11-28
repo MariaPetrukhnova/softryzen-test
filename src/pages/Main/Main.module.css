@@ -1,0 +1,29 @@
+.main_title {
+    font-family: "Oswald_Regular";
+    font-size: 36px;
+    font-weight: 400;
+    color: #173D33;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 64px;
+    }
+}
+
+.main_textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_titleBlock {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: raw;
+    }
+}

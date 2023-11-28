@@ -1,0 +1,16 @@
+.header_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 24px;
+    }
+}
+
+.header_btnBox {
+    display: flex;
+    align-items: center;
+}

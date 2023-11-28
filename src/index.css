@@ -1,0 +1,102 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+
+/* fonts */
+@font-face {
+  font-family: 'Oswald_Regular';
+  src: local('Oswald_Regular'),
+    url('./assets/fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald_Bold';
+  src: local('Oswald_Bold'),
+    url('./assets/fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans_Light';
+  src: local('FiraSans_Light'),
+    url('./assets/fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans_Regular';
+  src: local('FiraSans_Regular'),
+    url('./assets/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+}
+
+/*  */
+
+body {
+  margin: 0;
+  font-family: 'FiraSans_Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'FiraSans_Regular';
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+.overflowhidden {
+  overflow: hidden;
+  /* opacity: 0.75;
+  filter: blur(1px); */
+}

@@ -1,0 +1,24 @@
+.contactBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 4px 4px 4px 16px; 
+    border: 1px solid #97D28B;
+    border-radius: 500px;
+
+    color: #173D33;
+    font-size: 16px;
+    font-family: 'FiraSans_Regular';
+}
+
+.contactElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #97D28B;
+}
