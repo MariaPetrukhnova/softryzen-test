@@ -1,5 +1,5 @@
 import LearnMoreBtn from "../../components/LearnMoreBtn/LearnMoreBtn";
-import Hero from "../../assets/images/herotab2x.jpg";
+import Hero from "../../components/ImgSets/HeroImg";
 import { useState, useEffect } from "react";
 import css from './Main.module.css'
 
@@ -18,23 +18,23 @@ const Main = () => {
     }, []);
 
     return (
-        <section>
+        <section className={css.main_section}>
         <div className={css.main_titleBlock}>
         <h1 className={css.main_title}>RENEWABLE ENERGY For any task</h1>
             <div className={css.main_textBlock}>
-                <p>Development and implementation of renewable non-polluting energy sources, 
+                <p className={css.main_text}>Development and implementation of renewable non-polluting energy sources, 
                     generating power generation using energy wind, sun, water, biomass</p>
                 <LearnMoreBtn/>
             </div>
         </div>
-        <div>
-            <address>
-                <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
-                <p>office@ecosolution.com</p>
+        <div className={css.main_contactsInfo}>
+            <address className={css.main_contacts}>
+                <p className={css.main_adress}>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
+                <p className={css.main_mail}>office@ecosolution.com</p>
             </address>
-            {windowWidth > 768 && <p>ecosolution © 2023</p>}
-            <img src={`${Hero}`} alt='Wind turbine'/>
+            {windowWidth > 768 && <p className={css.main_copyright}>ecosolution © 2023</p>}
         </div>
+            <Hero/>
         </section>
     )
 };
