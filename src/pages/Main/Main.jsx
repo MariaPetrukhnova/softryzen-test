@@ -1,4 +1,4 @@
-import LearnMoreBtn from "../../components/LearnMoreBtn/LearnMoreBtn";
+import WhiteBtn from "../../components/WhiteBtn/WhiteBtn";
 import Hero from "../../components/ImgSets/HeroImg";
 import { useState, useEffect } from "react";
 import css from './Main.module.css'
@@ -17,6 +17,9 @@ const Main = () => {
         };
     }, []);
 
+    const mainBtn = 'LearnMore';
+    const relink = '/cases';
+
     return (
         <section className={css.main_section}>
         <div className={css.main_titleBlock}>
@@ -24,7 +27,7 @@ const Main = () => {
             <div className={css.main_textBlock}>
                 <p className={css.main_text}>Development and implementation of renewable non-polluting energy sources, 
                     generating power generation using energy wind, sun, water, biomass</p>
-                <LearnMoreBtn/>
+                <WhiteBtn nameBtn={mainBtn} relink={relink}/>
             </div>
         </div>
         <div className={css.main_contactsInfo}>

@@ -1,11 +1,12 @@
 import Logo from "./Logo";
-import GetInTouchBtn from "./GetInTouchBtn/GetInTouchBtn";
+import GetInTouchBtn from "./GetInTouchBtn/GreenBtn";
 import { useState, useEffect } from "react";
 import Modal from "./Modal/Modal";
 import css from './Header.module.css';
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const headerBtn = 'Get in touch'
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -23,7 +24,7 @@ const Header = () => {
           <Logo/>
           <div className={css.header_btnBox}>
             <Modal/>
-            {windowWidth > 768 && <GetInTouchBtn />}
+            {windowWidth > 768 && <GetInTouchBtn nameBtn={headerBtn}/>}
           </div>
         </div>
       );

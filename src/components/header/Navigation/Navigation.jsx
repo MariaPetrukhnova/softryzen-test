@@ -58,7 +58,7 @@ const Navigation = ({ closeModal }) => {
         </li>
         <li className={css.nav_item}>
           <NavLink
-            to="/FAQ"
+            to="/faq"
             className={css.nav_link}
             onClick={()=>closeModal()}
           >

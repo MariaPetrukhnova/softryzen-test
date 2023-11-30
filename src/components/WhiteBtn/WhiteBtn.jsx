@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom/dist';
-import css from './LearnMoreBtn.module.css';
+import css from './WhiteBtn.module.css';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IconContext } from 'react-icons';
 
-const LearnMoreBtn = () => {
-    return (
-        <NavLink to="/cases" className={css.btnLink}>
+const WhiteBtn = ({nameBtn, relink}) => {
+    return (<>
+        <NavLink to={relink}>
             <button className={css.contactBtn}>
-                Learn more
+                {nameBtn}
                 <div className={css.contactElement}>
                 <IconContext.Provider value={{ color: "#173D33", size: "16px" }}> 
                     <IoIosArrowRoundForward/>
@@ -15,7 +15,8 @@ const LearnMoreBtn = () => {
                 </div>
             </button>
         </NavLink>
+        </>
     )
 };
 
-export default LearnMoreBtn;
+export default WhiteBtn;

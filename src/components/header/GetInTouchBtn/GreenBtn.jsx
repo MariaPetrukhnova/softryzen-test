@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom/dist';
-import css from './GetInTouchBtn.module.css';
+import css from './GreenBtn.module.css';
 
-const GetInTouchBtn = () => {
+const GetInTouchBtn = ({nameBtn}) => {
 
   return (
     <button className={css.contactBtn}>
         <NavLink to="/contact" className={css.contactLink}>
-              Get in touch
+              {nameBtn}
         </NavLink>
     </button>
   );
