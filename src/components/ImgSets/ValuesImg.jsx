@@ -19,6 +19,7 @@ const ValuesImg1 = () => {
                     (max-width: 1280px) 1240px"
             src={`${Val1T2}`}
             alt="Workers near wind turbines" 
+            style={{objectFit: "cover"}}
             />
         </>
     )
@@ -36,6 +37,7 @@ const ValuesImg2 = () => {
                     (max-width: 1280px) 1240px"
             src={`${Val2T2}`}
             alt="Worker near solar panel" 
+            style={{objectFit: "cover"}}
             />
         </>
     )

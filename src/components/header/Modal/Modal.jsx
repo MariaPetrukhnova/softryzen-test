@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import css from './Modal.module.css';
 import Navigation from '../Navigation/Navigation';
-import { IoIosMenu, IoIosClose, IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
+import { IoIosMenu, IoIosClose} from "react-icons/io";
 import { IconContext } from "react-icons";
+import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
+
 
 
 import '../../../index.css';
@@ -31,21 +33,25 @@ const Modal = () => {
       {isOpen && (
         <div className={css.modal_Overlay}>
           <div>
-            <span className={css.close_Modal} onClick={closeModal}>
-              <IconContext.Provider value={{ color: "#FFFFFF", size: "20px", className: `${css.close_Icon}` }}> 
-                <IoIosClose/>
-              </IconContext.Provider>
+            <div className={css.close_Box}>
+              <span className={css.close_Modal} onClick={closeModal}>
+                <IconContext.Provider value={{ color: "#FFFFFF", size: "20px", className: `${css.close_Icon}` }}> 
+                  <IoIosClose/>
+                </IconContext.Provider>
               close
             </span>
+            </div>
             <Navigation width={500} closeModal={closeModal} />
           </div>
           <div>
-            <IconContext.Provider value={{ color: "#FFF", size: "24px" }}> 
-              <IoLogoFacebook/>
+          <div className={css.footer_socials}>
+          <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
+                <IoLogoFacebook/>
             </IconContext.Provider>
-            <IconContext.Provider value={{ color: "#FFF", size: "24px", className: `${css.insta_Icon}` }}> 
-              <IoLogoInstagram/>
+            <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
+                <IoLogoInstagram/>
             </IconContext.Provider>
+          </div>
           </div>
         </div>
       )}

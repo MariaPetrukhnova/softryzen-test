@@ -26,6 +26,18 @@
     url('./assets/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'AllRoundGothicThick';
+  src: url('./assets/fonts/AllRoundGothicThick/Fontspring-DEMO-allroundgothic-thick.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./assets/fonts/CASaygonText/CASaygonText-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
 /*  */
 
 body {

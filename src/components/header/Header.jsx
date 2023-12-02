@@ -1,5 +1,5 @@
-import Logo from "./Logo";
-import GetInTouchBtn from "./GetInTouchBtn/GreenBtn";
+import Logo from "./Logo/Logo";
+import GreenBtn from "../btns/GreenBtn/GreenBtn";
 import { useState, useEffect } from "react";
 import Modal from "./Modal/Modal";
 import css from './Header.module.css';
@@ -19,12 +19,25 @@ const Header = () => {
     };
   }, []);
 
+
+  const [scrolltopdata, setscrolltopdata] = useState('');
+
+  useEffect(() => {
+      window.addEventListener('scroll', () => {
+          if (window.scrollY < 15) {
+              setscrolltopdata('');
+          } else {
+              setscrolltopdata('white');
+          }
+      });
+  }, [])
+
     return (
-        <div className={css.header_wrapper}>
+        <div className={css.header_wrapper } style={{backgroundColor: scrolltopdata}}>
           <Logo/>
           <div className={css.header_btnBox}>
             <Modal/>
-            {windowWidth > 768 && <GetInTouchBtn nameBtn={headerBtn}/>}
+            {windowWidth > 768 && <GreenBtn nameBtn={headerBtn}/>}
           </div>
         </div>
       );

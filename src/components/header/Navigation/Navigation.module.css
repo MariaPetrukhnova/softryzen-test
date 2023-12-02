@@ -10,22 +10,26 @@
 
     @media screen and (min-width: 768px) {
         color: #fff;
-        opacity: 0.25;
+        opacity: 0.75;
     }
 }
 
 .nav_link:visited, .arrow_Icon:visited {
     @media screen and (min-width: 768px) {
         color: #97D28B;
-        opacity: 0.25;
     }
 }
 
-.nav_link:hover, .nav_link:focus, .arrow_Icon:hover, .arrow_Icon:focus {
+.nav_item:hover > * {
+        color: #97D28B;
+        fill: #97D28B;
     @media screen and (min-width: 768px) {
-        color: #fff;
-        opacity: 1;
+        opacity: 0.75;
     }
+}
+
+.nav_item:hover .arrow_Icon {
+    fill: #97D28B;
 }
 
 .nav_link:active, .arrow_Icon:active {

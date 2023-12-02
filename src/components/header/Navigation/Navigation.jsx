@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import css from './Navigation.module.css';
 import { GoArrowUpRight } from "react-icons/go";
 import { IconContext } from "react-icons";
+import { Link } from 'react-scroll';
 
 const Navigation = ({ closeModal }) => {
     
@@ -9,8 +10,8 @@ const Navigation = ({ closeModal }) => {
     <nav>
       <ul className={css.nav}>
         <li className={css.nav_item}>
-          <NavLink
-            to="/main"
+        <Link
+          to="main" spy={true} smooth={true}
             className={css.nav_link}
             onClick={closeModal}
           >
@@ -18,11 +19,11 @@ const Navigation = ({ closeModal }) => {
           <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
         <li className={css.nav_item}>
-          <NavLink
-            to="/about"
+          <Link
+            to="about" spy={true} smooth={true} 
             className={css.nav_link}
             onClick={closeModal}
           >
@@ -30,11 +31,11 @@ const Navigation = ({ closeModal }) => {
             <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
         <li className={css.nav_item}>
-          <NavLink
-            to="/service"
+          <Link
+            to="service" spy={true} smooth={true} 
             className={css.nav_link}
             onClick={closeModal}
           >
@@ -42,11 +43,11 @@ const Navigation = ({ closeModal }) => {
           <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
         <li className={css.nav_item}>
-          <NavLink
-            to="/cases"
+          <Link
+            to="cases" spy={true} smooth={true} 
             className={css.nav_link}
             onClick={closeModal}
           >
@@ -54,11 +55,11 @@ const Navigation = ({ closeModal }) => {
           <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
         <li className={css.nav_item}>
-          <NavLink
-            to="/faq"
+          <Link
+            to="faq" spy={true} smooth={true} 
             className={css.nav_link}
             onClick={()=>closeModal()}
           >
@@ -66,23 +67,11 @@ const Navigation = ({ closeModal }) => {
           <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
         <li className={css.nav_item}>
-          <NavLink
-            to="/customers"
-            className={css.nav_link}
-            onClick={closeModal}
-          >
-            Customers
-          <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
-              <GoArrowUpRight/>
-          </IconContext.Provider>
-          </NavLink>
-        </li>
-        <li className={css.nav_item}>
-          <NavLink
-            to="/contact"
+          <Link
+            to="contact" spy={true} smooth={true} 
             className={css.nav_link}
             onClick={()=>closeModal()}
           >
@@ -90,7 +79,7 @@ const Navigation = ({ closeModal }) => {
           <IconContext.Provider value={{ color: "#FFF", size: "16px",  className: `${css.arrow_Icon}` }}> 
               <GoArrowUpRight/>
           </IconContext.Provider>
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>

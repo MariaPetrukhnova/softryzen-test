@@ -1,23 +1,31 @@
-import Logo from "../header/Logo";
+import Logo from "../header/Logo/Logo";
 import css from './Footer.module.css'
-import { IoIosArrowRoundUp, IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
+import { IoIosArrowRoundUp } from "react-icons/io";
 import { IconContext } from 'react-icons';
+import { animateScroll as scroll } from 'react-scroll';
+import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
+
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      };
+
     return (
         <footer className={css.footer_section}>
             <div className={css.footer_linksBox}>
                 <Logo className={css.footer_logo}/>
-                <button className={css.arrowBtn}>
+                <button className={css.arrowBtn} onClick={scrollToTop}>
                     <IconContext.Provider value={{ color: "#173D33", size: "16px" }}> 
                         <IoIosArrowRoundUp/>
                     </IconContext.Provider>
                     </button>
                 <div className={css.footer_socials}>
-                    <IconContext.Provider value={{ color: "#173D33", size: "24px" }}> 
+                    <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
                         <IoLogoFacebook/>
                     </IconContext.Provider>
-                    <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.insta_Icon}` }}> 
+                    <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
                         <IoLogoInstagram/>
                     </IconContext.Provider>
                 </div>
