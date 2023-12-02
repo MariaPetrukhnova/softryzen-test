@@ -23,7 +23,7 @@ const ContactForm = () => {
         }
         setValidated(false);
       }
-    }, [validated]);
+    }, [validated, formErrors]);
 
     const formSchema = object({
       name: string().required('Name is required'),

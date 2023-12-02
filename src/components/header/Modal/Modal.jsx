@@ -7,6 +7,7 @@ import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
 
 
 
+
 import '../../../index.css';
 
 const Modal = () => {
@@ -31,28 +32,28 @@ const Modal = () => {
     </div>
 
       {isOpen && (
-        <div className={css.modal_Overlay}>
-          <div>
-            <div className={css.close_Box}>
-              <span className={css.close_Modal} onClick={closeModal}>
-                <IconContext.Provider value={{ color: "#FFFFFF", size: "20px", className: `${css.close_Icon}` }}> 
-                  <IoIosClose/>
-                </IconContext.Provider>
-              close
-            </span>
+        <div className={css.modal_backDrop}>
+          <div className={css.modal_Overlay}>
+            <div>
+              <div className={css.close_Box}>
+                <span className={css.close_Modal} onClick={closeModal}>
+                  <IconContext.Provider value={{ color: "#FFFFFF", size: "20px", className: `${css.close_Icon}` }}> 
+                    <IoIosClose/>
+                  </IconContext.Provider>
+                close
+              </span>
+              </div>
+              <Navigation width={500} closeModal={closeModal} />
             </div>
-            <Navigation width={500} closeModal={closeModal} />
-          </div>
-          <div>
-          <div className={css.footer_socials}>
-          <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                <IoLogoFacebook/>
-            </IconContext.Provider>
+            <div className={css.footer_socials}>
             <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                <IoLogoInstagram/>
-            </IconContext.Provider>
-          </div>
-          </div>
+                  <IoLogoFacebook/>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
+                  <IoLogoInstagram/>
+              </IconContext.Provider>
+            </div>
+            </div>
         </div>
       )}
     </div>
