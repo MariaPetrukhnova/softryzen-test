@@ -45,11 +45,11 @@
     }
 }
 
-.arrowBtn:hover{
+.arrowBtn:hover, .arrowBtn:focus{
     background-color: #173D33;
 }
 
-.arrowBtn:hover > * {
+.arrowBtn:hover > *, .arrowBtn:focus > * {
     fill: #97D28B;
 }
 
@@ -126,7 +126,7 @@
 }
 
 
-.social_icon:hover{
+.social_icon:hover, .social_icon:focus{
     fill:#97D28B;
 }
 

@@ -28,7 +28,7 @@ const ContactForm = () => {
     const formSchema = object({
       name: string().required('Name is required'),
       email: string().email('Email not valid').required('Email is required'),
-      phone: string().matches(/^380\d{9}$/, 'Phone is not valid').required('Email is required')
+      phone: string().matches(/^380\d{9}$/, 'Phone is not valid').required('Phone is required')
     })
   
 

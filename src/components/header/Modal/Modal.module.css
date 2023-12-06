@@ -66,11 +66,11 @@
     border-bottom: 1px solid white;
 }
 
-.close_Box:hover .close_Modal {
+.close_Box:hover .close_Modal, .close_Box:focus .close_Modal {
     color: #97D28B;
 }
 
-.close_Box:hover .close_Icon{
+.close_Box:hover .close_Icon, .close_Box:focus .close_Icon{
     fill: #97D28B;
 }
 
@@ -78,7 +78,7 @@
     margin-left: -5px;
 }
 
-.social_icon:hover{
+.social_icon:hover, .social_icon:focus{
     fill:#97D28B;
 }
 

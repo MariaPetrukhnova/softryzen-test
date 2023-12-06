@@ -114,11 +114,11 @@
     }
 }
 
-.cases_btn:hover {
+.cases_btn:hover, .cases_btn:focus {
     border-color: #97D28B;
 }
 
-.cases_btn:hover > * {
+.cases_btn:hover > *, .cases_btn:focus > * {
     fill: #97D28B;
 }
 
@@ -205,6 +205,14 @@
     border-radius: 100%;
     border: none;
 
+}
+
+.cases_slideButton:hover, .cases_slideButton:focus  {
+    background-color: #173D33;
+}
+
+.cases_slideButton:hover > *, .cases_slideButton:focus > * {
+    fill:#97D28B;
 }
 
 .cases_slideText {

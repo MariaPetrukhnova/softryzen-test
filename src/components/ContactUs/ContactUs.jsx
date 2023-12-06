@@ -40,12 +40,16 @@ const ContactUs = () => {
                     </div>
                     <p className={css.contacts_subtitle}>Social Networks:</p>
                     <div className={css.contacts_socials}>
-                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                            <IoLogoFacebook/>
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                            <IoLogoInstagram/>
-                        </IconContext.Provider>
+                        <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
+                            <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
+                                <IoLogoFacebook/>
+                            </IconContext.Provider>
+                        </a>
+                        <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
+                            <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
+                                <IoLogoInstagram/>
+                            </IconContext.Provider>
+                        </a>
                     </div>
                 </address>
                 <ContactForm className={css.contacts_formBox}/>

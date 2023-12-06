@@ -180,7 +180,7 @@
     font-family: 'FiraSans_Regular';
 }
 
-.ContactForm_btn:hover{
+.ContactForm_btn:hover, .ContactForm_btn:focus {
     background-color: #173D33;
     border: none;
     color: #97D28B;
@@ -219,7 +219,7 @@
     margin-left: 8px;
 }
 
-.social_icon:hover{
+.social_icon:hover, .social_icon:focus{
     fill:#97D28B;
 }
 

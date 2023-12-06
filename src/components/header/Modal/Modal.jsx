@@ -25,11 +25,11 @@ const Modal = () => {
 
   return (
     <div className={css.modal_Wrapper}>
-    <div className={css.menu_Btn} onClick={openModal}>
+    <button className={css.menu_Btn} onClick={openModal}>
         <IconContext.Provider value={{ color: "#292D32", size: "16px" }}> 
           <IoIosMenu/>
         </IconContext.Provider>
-    </div>
+    </button>
 
       {isOpen && (
         <div className={css.modal_backDrop}>
@@ -46,12 +46,16 @@ const Modal = () => {
               <Navigation width={500} closeModal={closeModal} />
             </div>
             <div className={css.footer_socials}>
-            <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                  <IoLogoFacebook/>
-              </IconContext.Provider>
-              <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                  <IoLogoInstagram/>
-              </IconContext.Provider>
+              <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
+                <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
+                    <IoLogoFacebook/>
+                </IconContext.Provider>
+              </a>
+              <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
+                <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
+                    <IoLogoInstagram/>
+                </IconContext.Provider>
+              </a>
             </div>
             </div>
         </div>

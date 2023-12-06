@@ -10,7 +10,7 @@
     margin-left: 12px;
 }
 
-.contactBtn:hover{
+.contactBtn:hover, .contactBtn:focus{
     background-color: #173D33;
     color: #97D28B;
     &::after{
@@ -21,7 +21,7 @@
     }
 }
 
-.contactBtn:hover .contactLink{
+.contactBtn:hover .contactLink, .contactBtn:focus .contactLink{
     color: #97D28B;
 }
 
@@ -42,6 +42,7 @@
     align-items: center;
 }
 
-.contactLink:hover{
+.contactLink:hover, .contactLink:focus{
     color: #97D28B;
 }
+

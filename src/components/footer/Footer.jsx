@@ -22,12 +22,16 @@ const Footer = () => {
                     </IconContext.Provider>
                     </button>
                 <div className={css.footer_socials}>
-                    <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                        <IoLogoFacebook/>
-                    </IconContext.Provider>
-                    <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                        <IoLogoInstagram/>
-                    </IconContext.Provider>
+                <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
+                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
+                            <IoLogoFacebook/>
+                        </IconContext.Provider>
+                    </a>
+                    <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
+                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
+                            <IoLogoInstagram/>
+                        </IconContext.Provider>
+                    </a>
                 </div>
             </div>
             <div className={css.footer_contactsInfo}>
