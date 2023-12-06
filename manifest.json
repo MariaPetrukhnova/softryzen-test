@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "eco.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x36 32x18 24x13 16x9",
       "type": "image/x-icon"
     },
     {

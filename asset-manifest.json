@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/softryzen-test/static/css/main.81135a82.css",
-    "main.js": "/softryzen-test/static/js/main.0353ae3f.js",
+    "main.css": "/softryzen-test/static/css/main.5737a608.css",
+    "main.js": "/softryzen-test/static/js/main.f3ee6bd0.js",
     "static/js/787.c21eb39e.chunk.js": "/softryzen-test/static/js/787.c21eb39e.chunk.js",
     "static/media/heroweb2x.jpg": "/softryzen-test/static/media/heroweb2x.4ca98e4b55c4db3dfcd5.jpg",
     "static/media/herotab2x.jpg": "/softryzen-test/static/media/herotab2x.45c87140c4f6d7213b1e.jpg",
@@ -28,12 +28,12 @@
     "static/media/sprite3.svg": "/softryzen-test/static/media/sprite3.16af26a93d9f1d400994fc0f0615836f.svg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.woff2": "/softryzen-test/static/media/Fontspring-DEMO-allroundgothic-thick.33382ed10e1fcaa92d5e.woff2",
     "index.html": "/softryzen-test/index.html",
-    "main.81135a82.css.map": "/softryzen-test/static/css/main.81135a82.css.map",
-    "main.0353ae3f.js.map": "/softryzen-test/static/js/main.0353ae3f.js.map",
+    "main.5737a608.css.map": "/softryzen-test/static/css/main.5737a608.css.map",
+    "main.f3ee6bd0.js.map": "/softryzen-test/static/js/main.f3ee6bd0.js.map",
     "787.c21eb39e.chunk.js.map": "/softryzen-test/static/js/787.c21eb39e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81135a82.css",
-    "static/js/main.0353ae3f.js"
+    "static/css/main.5737a608.css",
+    "static/js/main.f3ee6bd0.js"
   ]
 }
