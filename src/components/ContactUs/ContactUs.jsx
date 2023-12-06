@@ -1,8 +1,6 @@
 import css from './ContactUs.module.css';
 import ContactForm from './ContactForm';
 import sprite from '../../assets/sprite3.svg';
-import { IconContext } from 'react-icons';
-import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
 
 const ContactUs = () => {
 
@@ -41,14 +39,14 @@ const ContactUs = () => {
                     <p className={css.contacts_subtitle}>Social Networks:</p>
                     <div className={css.contacts_socials}>
                         <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
-                            <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                                <IoLogoFacebook/>
-                            </IconContext.Provider>
+                            <svg className={css.contacts_icon}>
+                                <use href={sprite + "#facebook"} />
+                            </svg>
                         </a>
                         <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
-                            <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                                <IoLogoInstagram/>
-                            </IconContext.Provider>
+                            <svg className={css.contacts_icon}>
+                                <use href={sprite + "#instagram"} />
+                            </svg>
                         </a>
                     </div>
                 </address>

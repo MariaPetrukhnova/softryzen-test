@@ -7,7 +7,7 @@ import ContactUs from './ContactUs/ContactUs.jsx';
 import Cases from './Cases/Cases.jsx';
 import Header from './header/Header.jsx';
 import Footer from './footer/Footer.jsx';
-// import Content from './Content.jsx';
+
 
 function App() {
 

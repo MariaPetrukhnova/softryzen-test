@@ -125,9 +125,15 @@
     }
 }
 
+.social_icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke:#173D33;
+}
 
 .social_icon:hover, .social_icon:focus{
-    fill:#97D28B;
+    stroke:#97D28B;
 }
 
 .social_icon:last-child {

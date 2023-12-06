@@ -210,9 +210,13 @@
 }
 
 .contacts_icon {
-    fill: #173D33;
+    fill: none;
+    stroke: #173D33;
     width: 24px;
     height: 24px;
+}
+.contacts_icon:hover, .contacts_icon:focus {
+    stroke: #97D28B;
 }
 
 .contacts_icon:last-child {

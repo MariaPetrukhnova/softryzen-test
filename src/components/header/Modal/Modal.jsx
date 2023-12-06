@@ -3,12 +3,9 @@ import css from './Modal.module.css';
 import Navigation from '../Navigation/Navigation';
 import { IoIosMenu, IoIosClose} from "react-icons/io";
 import { IconContext } from "react-icons";
-import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
-
-
-
-
+import sprite from '../../../assets/sprite3.svg';
 import '../../../index.css';
+
 
 const Modal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,14 +44,14 @@ const Modal = () => {
             </div>
             <div className={css.footer_socials}>
               <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
-                <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                    <IoLogoFacebook/>
-                </IconContext.Provider>
+                <svg className={css.social_icon}>
+                  <use href={sprite + "#facebook"} />
+                </svg>
               </a>
               <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
-                <IconContext.Provider value={{ color: "#FFFFFF", size: "24px", className: `${css.social_icon}` }}> 
-                    <IoLogoInstagram/>
-                </IconContext.Provider>
+                <svg className={css.social_icon}>
+                  <use href={sprite + "#instagram"} />
+                </svg>
               </a>
             </div>
             </div>

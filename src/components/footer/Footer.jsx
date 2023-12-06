@@ -3,7 +3,7 @@ import css from './Footer.module.css'
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { IconContext } from 'react-icons';
 import { animateScroll as scroll } from 'react-scroll';
-import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
+import sprite from '../../assets/sprite3.svg';
 
 
 const Footer = () => {
@@ -22,15 +22,15 @@ const Footer = () => {
                     </IconContext.Provider>
                     </button>
                 <div className={css.footer_socials}>
-                <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
-                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                            <IoLogoFacebook/>
-                        </IconContext.Provider>
+                    <a target='_blank' href='https://www.facebook.com' rel="noreferrer noopener">
+                        <svg className={css.social_icon}>
+                            <use href={sprite + "#facebook"} />
+                        </svg>
                     </a>
                     <a target='_blank' href='https://www.instagram.com' rel="noreferrer noopener">
-                        <IconContext.Provider value={{ color: "#173D33", size: "24px", className: `${css.social_icon}` }}> 
-                            <IoLogoInstagram/>
-                        </IconContext.Provider>
+                        <svg className={css.social_icon}>
+                            <use href={sprite + "#instagram"} />
+                        </svg>
                     </a>
                 </div>
             </div>

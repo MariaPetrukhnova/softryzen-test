@@ -78,8 +78,15 @@
     margin-left: -5px;
 }
 
+.social_icon {
+    fill: none;
+    stroke: #FFF;
+    width: 24px;
+    height: 24px;
+}
+
 .social_icon:hover, .social_icon:focus{
-    fill:#97D28B;
+    stroke:#97D28B;
 }
 
 .social_icon:last-child {
