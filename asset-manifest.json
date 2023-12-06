@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/softryzen-test/static/css/main.5737a608.css",
-    "main.js": "/softryzen-test/static/js/main.f3ee6bd0.js",
+    "main.css": "/softryzen-test/static/css/main.6dcbe37b.css",
+    "main.js": "/softryzen-test/static/js/main.9035f0c9.js",
     "static/js/787.c21eb39e.chunk.js": "/softryzen-test/static/js/787.c21eb39e.chunk.js",
     "static/media/heroweb2x.jpg": "/softryzen-test/static/media/heroweb2x.4ca98e4b55c4db3dfcd5.jpg",
     "static/media/herotab2x.jpg": "/softryzen-test/static/media/herotab2x.45c87140c4f6d7213b1e.jpg",
@@ -25,15 +25,15 @@
     "static/media/Oswald-Bold.ttf": "/softryzen-test/static/media/Oswald-Bold.41669c1e4f6bdc605d26.ttf",
     "static/media/Oswald-Regular.ttf": "/softryzen-test/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
     "static/media/CASaygonText-Regular.woff2": "/softryzen-test/static/media/CASaygonText-Regular.a94735b1aeadddcbae56.woff2",
-    "static/media/sprite3.svg": "/softryzen-test/static/media/sprite3.16af26a93d9f1d400994fc0f0615836f.svg",
+    "static/media/sprite3.svg": "/softryzen-test/static/media/sprite3.c353337f02440ba67ebc15a1695dd686.svg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.woff2": "/softryzen-test/static/media/Fontspring-DEMO-allroundgothic-thick.33382ed10e1fcaa92d5e.woff2",
     "index.html": "/softryzen-test/index.html",
-    "main.5737a608.css.map": "/softryzen-test/static/css/main.5737a608.css.map",
-    "main.f3ee6bd0.js.map": "/softryzen-test/static/js/main.f3ee6bd0.js.map",
+    "main.6dcbe37b.css.map": "/softryzen-test/static/css/main.6dcbe37b.css.map",
+    "main.9035f0c9.js.map": "/softryzen-test/static/js/main.9035f0c9.js.map",
     "787.c21eb39e.chunk.js.map": "/softryzen-test/static/js/787.c21eb39e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5737a608.css",
-    "static/js/main.f3ee6bd0.js"
+    "static/css/main.6dcbe37b.css",
+    "static/js/main.9035f0c9.js"
   ]
 }
